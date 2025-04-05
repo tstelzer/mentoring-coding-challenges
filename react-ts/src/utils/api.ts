@@ -1,11 +1,29 @@
-import type { User } from "../types/user";
-
 const API_BASE_URL = "https://jsonplaceholder.typicode.com";
 
-// TODO: Implement the fetchUsers function to get data from the API
-export const fetchUsers = async (): Promise<User[]> => {
-	// Your code here
-	// Hint: Use fetch to get users from `${API_BASE_URL}/users`
+export interface User {
+  id: number;
+  name: string;
+  username: string;
+  email: string;
+  address: {
+    street: string;
+    suite: string;
+    city: string;
+    zipcode: string;
+    geo: {
+      lat: string;
+      lng: string;
+    };
+  };
+  phone: string;
+  website: string;
+  company: {
+    name: string;
+    catchPhrase: string;
+    bs: string;
+  };
+} 
 
+export const fetchUsers = async (): Promise<User[]> => {
 	return [];
 };

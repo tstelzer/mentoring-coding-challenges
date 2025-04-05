@@ -2,16 +2,30 @@
 
 Build a simple user directory application that fetches and displays user information from JSONPlaceholder API.
 
-## Requirements
-- Fetch users from `https://jsonplaceholder.typicode.com/users`
-- Display user cards in a grid with: name, email, and company name
-- Complete the TODOs in these files:
-  1. `src/utils/api.ts` - Implement fetch function
-  2. `src/components/UserDirectory/index.tsx` - Add state, data fetching, rendering
-  3. `src/components/UserCard/index.tsx` - Display user information
+## Getting Started
 
-## Notes
-- We've provided TypeScript interfaces, styling, and component structure
-- Focus on implementing the functionality marked with TODO comments
+1. In your terminal, navigate to the `react-ts` folder, if you haven't already.
+
+```bash
+cd ./react-ts
+```
+
+2. Install dependencies.
+
+```bash
+npm ci
+```
+
+3. Start the frontend dev server.
+
+```bash
+npm run dev
+```
+
+## Challenge
+
+- Fetch users from `https://jsonplaceholder.typicode.com/users`
+- Display user cards and show their name, email, and company name
+- Style in whatever way you see fit
 
 Good luck! 
